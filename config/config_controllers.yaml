@@ -1,0 +1,61 @@
+# Robot name goes here
+model4_new:
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller 1
+  steering_controller:
+    type: position_controllers/JointPositionController  
+    joint: base_front_axle   
+
+    
+  drive_wheel1_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: front_axle_wheel1
+      
+    
+  drive_wheel2_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: front_axle_wheel2
+   
+    
+  drive_wheel3_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: rear_axle_wheel3
+    
+    
+  drive_wheel4_controller:
+    type: velocity_controllers/JointVelocityController
+    joint: rear_axle_wheel4
+    
+  gazebo_ros_control:   
+   pid_gains:
+    front_axle_wheel1:
+      p: 2.0
+      i: 0.0 
+      d: 0.0
+      
+    front_axle_wheel2:
+      p: 2.0
+      i: 0.0 
+      d: 0.0
+      
+    rear_axle_wheel3:
+      p: 2.0
+      i: 0.0 
+      d: 0.0
+      
+    rear_axle_wheel4:
+      p: 2.0
+      i: 0.0 
+      d: 0.0
+
+    base_front_axle:
+      p: 100.0
+      i: 10
+      d: 2.0 
+      d: 10
+
+ 
