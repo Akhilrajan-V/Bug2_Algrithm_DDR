@@ -11,6 +11,7 @@ Please make sure all libraries are preinstalled in your system to run the two py
 3. Now make bug2_obstacle_avoidance.py executable (type -> "chmod +x bug2_obstacle_avoidance.py")
 4. Cd into catkin workspace and type catkin_make, to build and setup the workspace
 5. Open a new terminal and type "roslaunch model4_new project1.launch" to launch gazebo simulation environment
+
 6. For Teleop control:
 	
 	*Open a new terminal and type "rosrun model4_new teleop.py"
@@ -20,9 +21,9 @@ Please make sure all libraries are preinstalled in your system to run the two py
 	Note: You have to stop the robot before trying to change its direction, press k, before pressing each key   
 
 7. For obstacle avoidance:
+
 	 *Type "roslaunch model4_new project1.launch" to launch gazebo simulation environment in a terminal. 
          *And in a new terminal type "rosrun model4_new bug2_obstacle_avoidance.py".
          Code will terminate after completion.
          
-Two video files have been attached as answers to the given questions. 
-Their respective scripts are in src/ directory.
+
